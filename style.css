@@ -16,36 +16,41 @@
 }
 
 body {
-    background: var(--bg-gradient);
-    min-height: 100vh;
-    color: var(--text-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  font-family: 'Funnel Sans', sans-serif;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+h1, h2, h3, .title {
+  font-family: 'Funnel Display', sans-serif;
 }
 
 .main-container {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 16px;
-    max-width: 800px;
-    width: 100%;
-    padding: 40px;
-    box-shadow: var(--shadow);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  box-shadow: var(--shadow);
 }
 
 .profile {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .profile-img-container {
-    width: 200px;
-    height:  200px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid var(--primary-color);
+  width: 200px;
+  height:  200px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--primary-color);
 }
 
 .photo {
@@ -109,6 +114,10 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card > h3 {
+  margin-bottom: 4px;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -117,11 +126,41 @@ h1 {
 }
 
 .tag {
-  background-color: #f0f0f0;
+  background-color: #dcdcdc;
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.85rem;
   color: var(--text-dark);
   font-weight: 600;
   transition: background 0.3s;
+}
+
+.card:hover .tag {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.skill-list, .goal-list {
+  list-style: none;
+}
+
+.skill-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 5px;
+}
+
+.stars {
+  color: gold;
+}
+
+.goal-list {
+  margin-bottom: 12x;
+  padding-left: 10px;
+}
+
+.goal-list li {
+  margin-bottom: 12px;
 }
